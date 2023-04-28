@@ -1,0 +1,43 @@
+
+{{template "header.html"}}
+<h1 class="title">
+	HOME PAGE
+</h1>
+
+<p>As of the prototyping phase we currently support only These keywords as we are Rate limited. Please try to use the given below keywords to use the tool</p>
+
+
+
+<!-- <div class="field">
+    
+    <div class="control">
+      <textarea class="textarea" placeholder="Textarea"></textarea>
+    </div>
+</div> -->
+
+<form action="/api/keyword" enctype="multipart/form-data" method="POST">
+  <div class="field">
+    <label class="label"><h3> Enter Keywords Here </h3></label>
+    <div class="control">
+      <!-- <input class="input" type="text" placeholder="Enter Keywords Here"> -->
+      <textarea name="keywords" class="textarea" placeholder="Textarea"></textarea>
+    </div>
+    <div class="control">
+      <input class="button" type="submit" value="Submit" />
+      <!-- <a class="button is-info" >
+        Search
+      </a> -->
+    </div>
+  </div>
+</form>
+
+
+
+
+<div class="field">
+  <p class="textarea">{{ .contentKeywordsList }}</p>
+</div>
+
+
+
+<h3></h3>

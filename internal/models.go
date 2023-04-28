@@ -13,7 +13,7 @@ type RankedKeywordsResponse struct {
 }
 
 type FloatBeneficiary struct {
-	Priority      int
+	Priority      float64
 	IsBeneficiary bool
 	Value         float64
 }
